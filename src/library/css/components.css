@@ -1,0 +1,60 @@
+@layer components {
+  div.custom-dash:before {
+    content: "";
+    position: absolute;
+    border-style: dashed;
+    border-color: #c4c4c4;
+    border-width: 5px;
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+  }
+
+  div.odd:before {
+    left: 0;
+    right: 0;
+    border-radius: 60px;
+  }
+
+  div.custom-dash {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply font-semibold disabled:cursor-not-allowed outline-none
+		w-full flex gap-8 items-center justify-center max-w-xs min-w-min
+		data-[focus-visible]:ring data-[focus-visible]:ring-offset-2
+		rounded data-[loading=true]:cursor-wait;
+  }
+
+  .btn > svg {
+    @apply shrink-0;
+  }
+}
+
+@layer components {
+  .grid-layout-panel {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content auto;
+    gap: 0 0;
+    grid-template-areas:
+      "header"
+      "content";
+  }
+}
+
+@layer components {
+  .test {
+    @apply text-7xl;
+  }
+}

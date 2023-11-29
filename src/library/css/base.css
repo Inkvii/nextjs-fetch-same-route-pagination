@@ -1,0 +1,33 @@
+@layer base {
+  body {
+    @apply bg-info-100 text-typography-body flex flex-col;
+  }
+
+  h1 {
+    @apply text-4xl font-bold text-typography-header;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold text-typography-header;
+  }
+
+  h3 {
+    @apply text-xl font-semibold text-typography-header;
+  }
+
+  h4 {
+    @apply text-lg font-semibold text-typography-header;
+  }
+
+  h5 {
+    @apply text-base font-semibold text-typography-header;
+  }
+
+  p {
+    @apply text-base text-typography-body;
+  }
+
+  hr {
+    @apply text-typography-caption;
+  }
+}

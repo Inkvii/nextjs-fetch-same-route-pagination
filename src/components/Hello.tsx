@@ -1,3 +1,9 @@
-export default function Hello() {
-  return <div>Hello there</div>
+"use server"
+
+const counter = 1
+export async function serverAction() {
+  console.log("Ran on server")
+
+  
+
 }
